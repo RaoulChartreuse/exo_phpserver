@@ -16,7 +16,7 @@ for ($i=0; $i<10; $i++){
 </ul>
 
  <?php
-include configDb.php;
+include 'configDb.php';
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
