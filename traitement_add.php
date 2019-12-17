@@ -9,10 +9,7 @@ Bonjour, Ton prenom est <?php echo htmlspecialchars($_POST['prenom']); ?>.
 Et ton nom est <?php echo $_POST['nom']; ?> .
 
  <?php
-$servername = "localhost";
-$username = "dbuser";
-$password = "dbuser";
-$dbname = "stage";
+include configDb.php;
 $Xnom = $_POST['prenom'];
 $Xprenom = $_POST['nom'];
 

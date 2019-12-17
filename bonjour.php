@@ -16,11 +16,7 @@ for ($i=0; $i<10; $i++){
 </ul>
 
  <?php
-$servername = "10.69.8.60";
-$username = "adel";
-$password = "adel";
-$dbname = "stage";
-
+include configDb.php;
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
