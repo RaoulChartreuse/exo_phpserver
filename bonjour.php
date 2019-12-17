@@ -9,7 +9,7 @@
 for ($i=0; $i<10; $i++){
        echo '<li> ';
        echo $i ;
-       echo '  Rien </li>';
+       echo '  test </li>';
 }
 // dfssdfdfs d 
 ?>
