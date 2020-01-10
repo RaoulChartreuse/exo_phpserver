@@ -1,0 +1,2 @@
+FROM mariadb
+COPY ./sql-script/ /docker-entrypoint-initdb.d/

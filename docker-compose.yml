@@ -1,0 +1,31 @@
+version: '3.1'
+services:
+  db:
+    build:
+      ./mysql
+    restart:
+      always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "stage"
+      MYSQL_USER: "adel"
+      MYSQL_PASSWORD: "adel"
+    expose:
+      - "3306"
+    networks:
+      - networks_PHP
+
+  httpdserver:
+    depends_on:
+      - db
+    build:
+      ./web
+    ports:
+      - 8666:80
+    networks:
+      - networks_PHP
+networks:
+  networks_PHP:
+    driver:
+      bridge

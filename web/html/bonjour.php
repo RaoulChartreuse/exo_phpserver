@@ -3,7 +3,7 @@
   <title>Liste des stagiaire</title>
  </head>
  <body>
- <?php echo '<p>Bonjour le monde</p>'; ?>
+ <?php echo '<p>Bonjour tout le monde</p>'; ?>
  <ul>
  <?php
 for ($i=0; $i<10; $i++){
